@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1A73932ABE970B008F8557 /* SuperMarket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A73922ABE970B008F8557 /* SuperMarket.swift */; };
+		8B1A73952ABE97C1008F8557 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A73942ABE97C1008F8557 /* Schedule.swift */; };
+		8B1A73972ABE9AEC008F8557 /* SuperMarketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A73962ABE9AEC008F8557 /* SuperMarketRow.swift */; };
+		8B1A73992ABF963C008F8557 /* SuperMarketList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A73982ABF963C008F8557 /* SuperMarketList.swift */; };
 		8B92A8D72AB572E8001FFCF2 /* HorariosSupermercadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92A8D62AB572E8001FFCF2 /* HorariosSupermercadosApp.swift */; };
 		8B92A8D92AB572E8001FFCF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B92A8D82AB572E8001FFCF2 /* ContentView.swift */; };
 		8B92A8DB2AB572E9001FFCF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B92A8DA2AB572E9001FFCF2 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B1A73922ABE970B008F8557 /* SuperMarket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarket.swift; sourceTree = "<group>"; };
+		8B1A73942ABE97C1008F8557 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		8B1A73962ABE9AEC008F8557 /* SuperMarketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketRow.swift; sourceTree = "<group>"; };
+		8B1A73982ABF963C008F8557 /* SuperMarketList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMarketList.swift; sourceTree = "<group>"; };
 		8B92A8D32AB572E8001FFCF2 /* HorariosSupermercados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorariosSupermercados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B92A8D62AB572E8001FFCF2 /* HorariosSupermercadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorariosSupermercadosApp.swift; sourceTree = "<group>"; };
 		8B92A8D82AB572E8001FFCF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1A738E2ABE9632008F8557 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A73962ABE9AEC008F8557 /* SuperMarketRow.swift */,
+				8B1A73982ABF963C008F8557 /* SuperMarketList.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		8B1A73912ABE9666008F8557 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B1A73922ABE970B008F8557 /* SuperMarket.swift */,
+				8B1A73942ABE97C1008F8557 /* Schedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8B92A8CA2AB572E8001FFCF2 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +77,8 @@
 		8B92A8D52AB572E8001FFCF2 /* HorariosSupermercados */ = {
 			isa = PBXGroup;
 			children = (
+				8B1A73912ABE9666008F8557 /* Models */,
+				8B1A738E2ABE9632008F8557 /* Components */,
 				8B92A8D62AB572E8001FFCF2 /* HorariosSupermercadosApp.swift */,
 				8B92A8D82AB572E8001FFCF2 /* ContentView.swift */,
 				8B92A8DA2AB572E9001FFCF2 /* Assets.xcassets */,
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1A73972ABE9AEC008F8557 /* SuperMarketRow.swift in Sources */,
+				8B1A73992ABF963C008F8557 /* SuperMarketList.swift in Sources */,
 				8B92A8D92AB572E8001FFCF2 /* ContentView.swift in Sources */,
 				8B92A8D72AB572E8001FFCF2 /* HorariosSupermercadosApp.swift in Sources */,
+				8B1A73952ABE97C1008F8557 /* Schedule.swift in Sources */,
+				8B1A73932ABE970B008F8557 /* SuperMarket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
