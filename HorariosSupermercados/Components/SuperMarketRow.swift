@@ -22,14 +22,19 @@ struct SuperMarketRow: View {
                            .resizable()
                            .frame(width: 40, height: 40)
                 VStack(alignment: .leading){
-                    Text(superMarket.name).font(.headline)
-                    Text(superMarket.address).font(.subheadline)
+                    Text(superMarket.name)
+                        .font(.headline)
+                        .lineLimit(2, reservesSpace: true)
+                    Text(superMarket.address)
+                        .font(.subheadline)
+                        .lineLimit(2, reservesSpace: true)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading) // Alinea el contenido a la izquierda y establece el ancho máximo
 
-                VStack(alignment: .trailing){
+                VStack{
                     Text(String(format: "%.1f", superMarket.distance) + "Km")
                                         .font(.subheadline)
+                                        
                     
                 }
             }
@@ -62,6 +67,42 @@ struct SuperMarketRow: View {
                         
                         HStack{
                             Text("Lunes")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Martes")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Miercoles")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Jueves")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Viernes")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Sabado")
+                            .frame(minWidth: 0, maxWidth: .infinity)
+                            Text("8 a. m - 9 p. m")
+                                .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        }
+                        HStack{
+                            Text("Domingo")
                             .frame(minWidth: 0, maxWidth: .infinity)
                             Text("8 a. m - 9 p. m")
                                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)

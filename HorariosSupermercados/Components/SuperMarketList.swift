@@ -17,9 +17,14 @@ struct SuperMarketList: View {
         
         VStack{
             Text("SUPERMERCADOS CERCA DE TI")
-            List(supermarkets, id: \.id){ supermarket in
-                SuperMarketRow(superMarket: supermarket)
+            
+            ScrollView{
+                ForEach(supermarkets, id: \.id) { supermarket in
+                    SuperMarketRow(superMarket: supermarket).padding(.horizontal, 10)
+                }
+                    
             }
+            
         }
         
         
