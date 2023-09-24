@@ -16,7 +16,6 @@ struct SuperMarketList: View {
     var body: some View {
         
         VStack{
-            Text("SUPERMERCADOS CERCA DE TI")
             
             ScrollView{
                 ForEach(supermarkets, id: \.id) { supermarket in

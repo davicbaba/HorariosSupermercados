@@ -11,7 +11,7 @@ import SwiftUI
 struct HorariosSupermercadosApp: App {
     var body: some Scene {
         WindowGroup {
-            SuperMarketList()
+            SuperMarketListView()
         }
     }
 }
